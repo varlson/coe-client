@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap");
+@import "./uitl.css";
+
+/*NAVBAR*/
+
+.nav-item {
+  @apply flex gap-1 items-center justify-center text-lg;
+}
+
+.height {
+  /* max-height: 0; */
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
+
+.rgba500 {
+  background-color: rgba(0, 0, 0, 0.15);
+}
