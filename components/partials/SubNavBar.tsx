@@ -130,7 +130,7 @@ export default function SubNavBar() {
           }   px-5 py-2 rounded-t   cursor-pointer`}
         >
           <div className="nav-item">
-            <Link href="/contact">
+            <Link href="/contatos">
               <span>Contato</span>
             </Link>
           </div>

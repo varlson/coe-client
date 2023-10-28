@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 
@@ -13,30 +14,40 @@ function index() {
       <div className="bg-darkRed p-2 rounded my-2">
         <p className="text-xl text-white">Matriz curricular</p>
       </div>
-
-      <div>
-        <h1>PDF Viewer</h1>
-        <Document
-          file="your-pdf-file.pdf" // Substitua com o caminho para o seu arquivo PDF
-          onLoadSuccess={onDocumentLoadSuccess}
-        >
-          <Page pageNumber={pageNumber} />
-        </Document>
+      <div className="my-2">
         <p>
-          Página {pageNumber} de {numPages}
+          Acesse{" "}
+          <span className="text-basicRed underline ">
+            <Link
+              target="blank"
+              href="https://drive.google.com/drive/u/1/folders/1LuVBmyiDNib__B-bV4F6dTpi_JRhNQJ7"
+            >
+              aqui
+            </Link>
+          </span>{" "}
+          a matriz curricular vigente e os programas das disciplinas do curso.
         </p>
-        <button
-          onClick={() => setPageNumber(pageNumber - 1)}
-          disabled={pageNumber <= 1}
-        >
-          Anterior
-        </button>
-        <button
-          onClick={() => setPageNumber(pageNumber + 1)}
-          disabled={pageNumber >= numPages}
-        >
-          Próxima
-        </button>
+      </div>
+
+      <div className="my-1">
+        <p className="my-1">
+          {" "}
+          <span className="text-basicRed underline">
+            {" "}
+            <Link href="" target="blank">
+              {" "}
+              Disciplinas do curso
+            </Link>{" "}
+          </span>{" "}
+          - Antes de 2023/2
+        </p>
+        <p className="my-1 text-basicRed underline">
+          {" "}
+          <Link href="" target="blank">
+            {" "}
+            Fluxograma das Disciplinas do Curso
+          </Link>
+        </p>
       </div>
     </div>
   );

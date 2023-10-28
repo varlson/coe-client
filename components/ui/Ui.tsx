@@ -103,9 +103,15 @@ export const ExpandInfra = () => {
 export const ExpandPesquisa = () => {
   return (
     <ul className="bg-basicRed flex text-center">
-      <li className="px-5 py-2 cursor-pointer">Grupos de Pesquisas</li>
-      <li className="px-5 py-2 cursor-pointer">Projetos de Pesquisa </li>
-      <li className="px-5 py-2 cursor-pointer">Projetos de Extensão</li>
+      <li className="px-5 py-2 cursor-pointer">
+        <Link href="/pesquisa">Projetos de Pesquisa</Link>
+      </li>
+      <li className="px-5 py-2 cursor-pointer">
+        <Link href="/pesquisa/grupos">Grupos de Pesquisas</Link>
+      </li>
+      <li className="px-5 py-2 cursor-pointer">
+        <Link href="/pesquisa/extensao">Projetos de Extensão</Link>
+      </li>
     </ul>
   );
 };

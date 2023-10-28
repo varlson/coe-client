@@ -30,7 +30,7 @@ function index() {
         </p>
       </div>
 
-      <table className="border-collapse border border-slate-400 w-full p-2">
+      <table className="border-collapse border border-slate-400 w-full p-2 my-3">
         <thead>
           <tr>
             <th className="p-2 border border-slate-300">Modalidade</th>
@@ -41,7 +41,7 @@ function index() {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr className="text-center">
             <td className="p-2 border border-slate-300 ...">Bacharelado</td>
             <td className="p-2 border border-slate-300 ...">10 semestres</td>
             <td className="p-2 border border-slate-300 ...">40</td>
