@@ -71,3 +71,17 @@
 .slide-area {
   background: linear-gradient(180deg, #303030 0%, rgba(209, 199, 199, 0) 100%);
 }
+
+.open-close {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s;
+}
+
+.btn-min-w {
+  max-width: 150px;
+}
+
+.testess {
+  scroll-behavior: smooth;
+}

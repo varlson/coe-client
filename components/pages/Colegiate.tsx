@@ -1,8 +1,10 @@
 import React from "react";
+import VideoPlayer from "../ui/VideoPlayer";
+import { videos } from "../../constants/constants";
 
 function Colegiate() {
   return (
-    <div className="lg:w-9/12 m-auto">
+    <div className="lg:w-9/12 m-auto font-Jura">
       <h3 className="about-title-texts">Sobre o Colegiado</h3>
       <div className="text-justify">
         <p className="about-texts">
@@ -18,6 +20,10 @@ function Colegiate() {
           desta universidade tem finalidade, composição e competências
           distintas.
         </p>
+      </div>
+
+      <div className="my-2 w-full">
+        <VideoPlayer video={videos.about_colegiate} />
       </div>
     </div>
   );

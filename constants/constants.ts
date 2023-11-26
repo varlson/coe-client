@@ -222,3 +222,23 @@ export const gradutationText =
 
 export const homeDescriptionMetaInformation =
   "Site do departamento da Engenharia Elétrica - Universidade Federal de Ouro Preto - Ufop - Campous João Monlevade";
+
+export const videos = {
+  about_colegiate: {
+    url: "https://drive.google.com/file/d/1NzTAIWj8MHv746RAoBUGAW_Nyc3jcuWB/preview",
+    legend: "Vídeo em libras falando sobre o curso.",
+  },
+  about_tcc: {
+    url: "https://drive.google.com/file/d/1unOyt3j_lThBdaQkRRSwsH63--vMGohq/preview",
+    legend: "Sobre TCC",
+  },
+
+  about_interning: {
+    url: "https://drive.google.com/file/d/16ggH7lwTgV7IzyYMd4yQtF7bfazYK1kf/preview",
+    legend: "Sobre Estágio",
+  },
+  enphasy: {
+    url: "https://drive.google.com/file/d/1u_LfsHPq5yIsKw1mAL1bPv4qQ8TuhI9l/preview",
+    legend: "Concessão da Ênfase",
+  },
+};
