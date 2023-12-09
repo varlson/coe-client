@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="lg:hidden ">
         <MobileNavbar showMenuHandler={showMenuHandler} />
       </div>
-      <div className="bg-basicBlack py-2 px-4">
+      <div id="header" className="bg-basicBlack py-2 px-4">
         <div className="lg:w-9/12 m-auto grid grid-cols-12 ">
           <div className=" col-span-9 md:col-span-5 text-white">
             <Logo />
