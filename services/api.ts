@@ -163,3 +163,30 @@ export const listPosts = async (postType: number) => {
     }
   });
 };
+
+export const searchQuery = async (querys: string) => {
+  return new Promise<IPost[] | string>(async (resolve, reject) => {
+    const url = "http://localhost:3222/api/posts/search";
+    const query = JSON.stringify({ query: querys });
+
+    try {
+      const result = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: query,
+      });
+
+      const data = await result.json();
+
+      if (data.success) {
+        resolve(data.posts);
+      } else {
+        reject(data.error);
+      }
+    } catch (error: any) {
+      reject(error.message);
+    }
+  });
+};

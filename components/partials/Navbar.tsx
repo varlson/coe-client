@@ -25,13 +25,13 @@ export default function Navbar() {
       <div className="lg:hidden ">
         <MobileNavbar showMenuHandler={showMenuHandler} />
       </div>
-      <div id="header" className="bg-basicBlack py-2 px-4">
+      <div id="header" className=" bg-basicBlack py-2 px-4">
         <div className="lg:w-9/12 m-auto grid grid-cols-12 ">
           <div className=" col-span-9 md:col-span-5 text-white">
             <Logo />
           </div>
 
-          <div className="hidden md:block self-center md:col-start-7 md:col-span-7 lg:col-start-8">
+          <div className=" md:flex justify-end hidden  self-center md:col-start-7 md:col-span-7 lg:col-start-8">
             <Search />
           </div>
 

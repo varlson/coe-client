@@ -27,17 +27,13 @@ export const Logo = () => {
 
 export const Search = () => {
   return (
-    <form className="flex bg-white rounded-xl">
-      <input
-        className="outline-none rounded-tl-xl rounded-bl-xl w-11/12 px-3 py-1"
-        type="text"
-      />
+    <Link href="/search">
       <img
-        className="justify-self-end h-10 object-contain"
+        className=" justify-self-end h-10 object-contain"
         src="/icons/red-search.png"
         alt=""
       />
-    </form>
+    </Link>
   );
 };
 
