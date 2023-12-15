@@ -85,3 +85,10 @@
 .testess {
   scroll-behavior: smooth;
 }
+
+.title-wrap {
+  @apply bg-darkRed p-2 rounded my-2;
+}
+.title {
+  @apply text-xl text-white;
+}

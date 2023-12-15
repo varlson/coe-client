@@ -241,4 +241,8 @@ export const videos = {
     url: "https://drive.google.com/file/d/1u_LfsHPq5yIsKw1mAL1bPv4qQ8TuhI9l/preview",
     legend: "Concessão da Ênfase",
   },
+  contact: {
+    url: "https://drive.google.com/file/d/19C9SR0Kd1vacNOo8HBvChZxesZu6Dz0-/preview",
+    legend: "Contacto",
+  },
 };

@@ -65,7 +65,9 @@ export const ExpandCurso = () => {
       <Link href="/curso/matriz-curricular">
         <li className="px-5 py-2 cursor-pointer">Matriz Curricular</li>
       </Link>
-      <li className="px-5 py-2 cursor-pointer">Docentes</li>
+      <Link href="/docentes">
+        <li className="px-5 py-2 cursor-pointer">Docentes</li>
+      </Link>
       <li className="px-5 py-2 cursor-pointer">Ementas</li>
       <li className="px-5 py-2 cursor-pointer">Projeto Pedagógico</li>
       <li className="px-5 py-2 cursor-pointer">Avaliação</li>
